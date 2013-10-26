@@ -8,4 +8,49 @@
     <script type="text/javascript" src="//use.typekit.net/xiy2aid.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   %body
+    %header.home
+      .inner
+        %nav
+          %h1= link_to 'Shoppe', root_path
+          %ul
+            %li= link_to "Home", root_path
+            %li= link_to "About"
+            %li= link_to "Docs & Tutorials"
+            %li= link_to "Code"
+            %li= link_to "Live Demo"
+            %li= link_to "Support"
+        
+        %div.screenshot= image_tag 'screenshot.png'
+        
+        %section.welcome
+          %h2 <b>Shoppe.</b> The open source e-commerce platform for Ruby on Rails.
+          %h3 The complete solution for anyone who wants to develop an online shop and doesn’t fancy over complication or extortionate monthly subscriptions & transaction costs.
+          %ul.buttons
+            %li= link_to "Check out the demo", '#', :class => 'demo'
+            %li= link_to "Read our docs & get started", '#', :class => 'docs'
+    
     = yield
+    
+    %footer.links
+      .inner
+        .column
+          %h4 Quick links
+          %ul
+            %li= link_to "About"
+            %li= link_to "Docs & Tutorials"
+            %li= link_to "The Code"
+            %li= link_to "Live Demo"
+            %li= link_to "Support"
+        .column 
+          %h4 Social
+          %ul
+            %li= link_to "Read our blog", "http://blog.tryshoppe.com"
+            %li= link_to "Follow us on Twitter", "http://twitter.com/tryshoppe"
+            %li= link_to "Check us out on GitHub", "http://github.com/tryshoppe"
+            %li= link_to "Submit a support request"
+    
+    %footer.final
+      .inner
+        %p Shoppe is commercially supported by Niftyware Limited. A UK-based company, registration number 8514362.
+        %p Copyright &copy; #{Date.today.year} Niftyware Limited.
+        

@@ -12,4 +12,7 @@
 #
 #= require jquery
 #= require jquery_ujs
+#= require svginject.jquery
 #= require_tree .
+$ ->
+  

@@ -1,2 +1,32 @@
 - @page_title = "The Ruby on Rails e-commerce platform"
-%p Homepage.
+
+%section.home
+  
+  %section.features
+    .inner
+      %ul
+        %li.ui= link_to "Complete admin interface included"
+        %li.rails= link_to "Built with Ruby on Rails"
+        %li.design= link_to "Design your store however you want"
+        %li.payments= link_to "Works with any payment gateway"
+        %li.businesses= link_to "A platform with businesses in mind"
+        %li.docs= link_to "Fantastic docs & tutorials"
+        %li.support= link_to "Commercial support & development"
+  
+  %section.featureBoxes
+    .inner
+      %ul
+        %li.rails
+          .arrow
+          %h3 <b>A Rails 4.0 engine.</b> You build the frontend, we'll hand the rest.
+          %p Shoppe is an engine which is easily inserted into an existing or new #{link_to 'Ruby on Rails', 'http://rubyonrails.org'} 4.0 application. You simply create your store’s frontend and we'll provide the backend and all the models needed to keep everything together.
+  
+  %section.partners
+    .inner
+      %h4 Shoppe couldn’t happen without the generous supoprt of our sponsors
+      %ul
+        %li.deploy= link_to "Deploy", "http://www.deployhq.com"
+        %li.atech= link_to "aTech Media", "http://atechmedia.com"
+        %li.niftyware= link_to "Niftyware", "http://niftyware.io"
+        %li.codebase= link_to "Codebase", "http://www.codebasehq.com"
+        %li.deliver= link_to "Deliver", "http://www.deliverhq.com"

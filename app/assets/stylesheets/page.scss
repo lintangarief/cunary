@@ -1,0 +1,141 @@
+//
+// Page header
+//
+header.page {
+	background:#fff;
+	nav.primary { 
+		padding:15px 0;
+		h1 a { background-image:image-url('logo.svg')}
+		ul li a { color:#000;}
+		ul li a:hover, ul li a.active { border-bottom-color:rgba(0,0,0,0.1)}
+	}
+}
+
+//
+// Page section
+// 
+section.page {
+	background:#fff;
+	
+	div.banner {
+		background:#000;
+		background-size:cover;
+		background-position:50%;
+		padding-top:300px;
+		&.about { background-image:image-url('backgrounds/beijing.jpg')}
+		
+		// Nav
+		nav.page {
+			border-top:1px solid rgba(255,255,255,0.2);
+			background:rgba(0,0,0,0.8);
+			padding:20px 0;
+			ul {
+				overflow:hidden;
+				li {
+					float:left;
+					width:16%;
+					margin:0 2%;
+					a {
+						display:block;
+						color:#fff;
+						text-decoration:none;
+						text-align:center;
+						h4 { font-size:1.4em;margin-bottom:4px; font-weight:600;}
+						p { font-size:1.1em; color:#888;}
+						div.arrow { position:absolute; margin-left:70px; margin-top:10px; width:30px; height:10px; background:image-url('arrow-up.svg') no-repeat bottom; background-size:contain;}
+						&:hover h4 { color:rgba(255,255,255,0.8)}
+						&:active {
+							h4, p { color:rgba(255,255,255,0.3) }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	section.content {
+		padding:50px 0;
+		width:70%;
+		h2 { font-size:3.5em; font-weight:300;}
+		h3 { font-size:2.0em;  margin:20px 0; font-weight:600;}
+		p { margin:20px 0;  font-size:1.3em; line-height:1.8;}
+		p a { color:#000; text-decoration:none; border-bottom:1px solid #ccc;}
+		
+		div.license {
+			background:#f7f7f7;
+			border:1px solid #ccc;
+			font-family:Consolas, Monaco, 'Courier New', fixed;
+			font-size:0.9em;
+			padding:1px 15px;
+		}
+		
+		section.iconed {
+			padding-left:80px;
+			margin:40px 0;
+			background-repeat:no-repeat;
+			background-size:50px;
+			&.contributing.code { background-image:image-url('icons/code.svg')}
+			&.contributing.design { background-image:image-url('icons/design.svg')}
+			&.contributing.other { background-image:image-url('icons/question.svg')}
+		}
+		
+		p.download { border-radius:7px; background:#f3f6ec;padding:25px 0; text-align:center; margin:30px 0;}
+		
+		ul.logo-usage {
+			font-size:1.3em;
+			margin:45px 0;
+			line-height:1.5;
+			li {
+				margin-bottom:25px;
+				padding-left:40px;
+				background-repeat:no-repeat;
+				background-size:20px;
+				background-position:0 2px;
+				b { font-weight:600;}
+				&.ok { background-image:image-url('heart.svg')}
+				&.ok b { color:#9AC835;}
+				&.bad { background-image:image-url('heart-cross.svg')}
+				&.bad b { color:#c8353c;}
+				&:last-child { margin-bottom:0;}
+			}
+		}
+		
+		ul.logos {
+			overflow:hidden;
+			margin:25px 0;
+			li {
+				width:50%;
+				float:left;
+				height:180px;
+				background:#40454D;
+				text-align:center;
+				&:first-child {
+					border-top-left-radius:7px;
+					border-bottom-left-radius:7px;
+					
+				}
+				&:last-child {
+					border-top-right-radius:7px;
+					border-bottom-right-radius:7px;
+					background:#F7F9FC;
+				}
+				img { width:60%;display:block; margin:60px auto 0 auto;}
+			}
+		}
+		
+		ul.partners {
+			overflow:hidden;
+			margin:45px 0;
+			li {
+				width:45%;
+				float:left;
+				text-align:center;
+				margin-right:5%;
+				h3 { height:30px;}
+				&:nth-child(2n) { margin-right:0; margin-left:5%;}
+				p { font-size:1.2em;}
+				p a { font-weight:600;}
+			}
+		}
+	}
+}

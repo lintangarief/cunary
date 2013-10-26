@@ -1,0 +1,37 @@
+- @active_nav = :about
+= content_for :banner do
+  .banner.about
+    %nav.page
+      .inner
+        %ul 
+          %li
+            %a{:href => about_path}
+              %h4 About Shoppe
+              %p What's Shoppe, who should use it, who makes it...
+              - if action_name == 'about'
+                .arrow
+          %li
+            %a{:href => about_partners_path}
+              %h4 Our partners
+              %p Without them, Shoppe just couldn't happen
+              - if action_name == 'partners'
+                .arrow
+          %li
+            %a{:href => about_license_path}
+              %h4 Software license
+              %p Read the license which governs how to use it
+              - if action_name == 'license'
+                .arrow
+          %li
+            %a{:href => about_contributing_path}
+              %h4 Contributing
+              %p How can you contribute to the Shoppe project?
+              - if action_name == 'contributing'
+                .arrow
+          %li
+            %a{:href => about_logos_path}
+              %h4 Logos
+              %p Download logos & read our logo usage policy
+              - if action_name == 'logos'
+                .arrow
+            

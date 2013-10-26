@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    = render 'shared/head'
+  %body
+    %header.page
+      .inner
+        = render 'shared/nav'
+    %section.page
+      = yield :banner
+      .inner
+        %section.content
+          = yield
+    = render 'shared/footer'
+    

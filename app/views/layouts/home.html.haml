@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    = render 'shared/head'
+  %body
+    %header.home
+      .inner
+        = render 'shared/nav'
+        %div.screenshot= image_tag 'screenshot.png'
+        %section.welcome
+          %h2 <b>Shoppe.</b> The open source e-commerce platform for Ruby on Rails.
+          %h3 The complete solution for anyone who wants to develop an online shop and doesn’t fancy over complication or extortionate monthly subscriptions & transaction costs.
+          %ul.buttons
+            %li= link_to "Check out the demo", '#', :class => 'demo'
+            %li= link_to "Read our docs & get started", '#', :class => 'docs'
+    = yield
+    = render 'shared/footer'

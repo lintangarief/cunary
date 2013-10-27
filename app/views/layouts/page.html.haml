@@ -8,8 +8,6 @@
         = render 'shared/nav'
     %section.page
       = yield :banner
-      .inner
-        %section.content
-          = yield
+      = yield
     = render 'shared/footer'
     

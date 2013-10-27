@@ -1,0 +1,39 @@
+- @active_nav = :features
+- @page_title = 'Features'
+
+= content_for :banner do
+  .banner.features
+    .inner
+      %h2 The complete e-commerce platform for Ruby on Rails.
+      %p Everything you need to get your online shop online in less than 24 hours with a complete solution to support your business going forward.
+
+%section.features
+  %section.ui
+    .inner
+      .screenshot= image_tag('screenshots/orders.png', :alt => "Orders in the Shoppe admin UI")
+      .text
+        %h3 A beautiful admin interface
+        %p Shoppe comes with a beautiful web-based interface which allows you to manage your orders, product catalogue and array of other settings for your store.
+        %ul
+          %li Manage orders
+          %li Compile & store your product catalog
+          %li Manage delivery services
+          %li Set up tax rates
+          %li Configure users
+          %li and more!
+  
+  %section.developers
+    .inner
+      %h3 Designed for developers
+      %p With excellent tutorials, fantastic documentation and plenty of examples, Shoppe will allow you to build your frontend store front & integrate it with your own design in minutes.
+      %p Whether you’re new to Rails or an experienced Rubyist, we're sure you'll be able to get the hang of things quickly.
+
+  %section.gateways
+    .inner
+      %h3 Works with any payment gateway
+      %p
+        Shoppe itself doesn't make any assumptions about how your payments work so you can build in support for
+        whatever payment gateway you use. 
+      %p
+        That's not to say we can't provide modules and we currently have modules for a number of gateways, check our
+        #{link_to 'code page', code_path} for full details.

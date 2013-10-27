@@ -1,5 +1,8 @@
 ShoppeWebsite::Application.routes.draw do
   
+  get 'features' => 'pages#features'
+  get 'code' => 'pages#code'
+  
   get 'about' => 'pages#about'
   get 'about/partners' => 'pages#partners'
   get 'about/license' => 'pages#license'

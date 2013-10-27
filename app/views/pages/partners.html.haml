@@ -1,43 +1,46 @@
 - @page_title = "Our partners - About"
 = render 'about_nav'
+%section.content
+  .inner
+    .main
 
-%h2 Our fantastic partners
-%p
-  We just couldn't have developed Shoppe without the help from the partners listed
-  below. Go and check out their sites, if you work with Rails we're sure you'll love
-  their work!
+      %h2 Our fantastic partners
+      %p
+        We just couldn't have developed Shoppe without the help from the partners listed
+        below. Go and check out their sites, if you work with Rails we're sure you'll love
+        their work!
   
-%ul.partners
-  %li
-    %h3= link_to image_tag('partners/niftyware.svg', :width => 200), "http://niftyware.io"
-    %p
-      = link_to "Niftyware", "http://niftyware.io"
-      provide elegant software solutions for businesses focusing
-      on support & billing software.
-  %li
-    %h3= link_to image_tag('partners/atech.svg', :width => 200), "http://atechmedia.com"
-    %p
-      = link_to "aTech Media", "http://atechmedia.com"
-      are a UK-based Rails development company specialising in working
-      with techs.
+      %ul.partners
+        %li
+          %h3= link_to image_tag('partners/niftyware.svg', :width => 200), "http://niftyware.io"
+          %p
+            = link_to "Niftyware", "http://niftyware.io"
+            provide elegant software solutions for businesses focusing
+            on support & billing software.
+        %li
+          %h3= link_to image_tag('partners/atech.svg', :width => 200), "http://atechmedia.com"
+          %p
+            = link_to "aTech Media", "http://atechmedia.com"
+            are a UK-based Rails development company specialising in working
+            with techs.
   
 
-  %li
-    %h3= link_to image_tag('partners/codebase.svg', :width => 200), "http://www.codebasehq.com"
-    %p
-      = link_to "Codebase", "http://www.codebasehq.com"
-      is a code hosting solution for software development teams.
-  %li
-    %h3= link_to image_tag('partners/deploy.svg', :width => 140), "http://www.deployhq.com"
-    %p
-      = link_to "Deploy", "http://www.deployhq.com"
-      is a web-based deployment platform for Git & Subversion repos
-      with FTP, SFTP & the cloud.
+        %li
+          %h3= link_to image_tag('partners/codebase.svg', :width => 200), "http://www.codebasehq.com"
+          %p
+            = link_to "Codebase", "http://www.codebasehq.com"
+            is a code hosting solution for software development teams.
+        %li
+          %h3= link_to image_tag('partners/deploy.svg', :width => 140), "http://www.deployhq.com"
+          %p
+            = link_to "Deploy", "http://www.deployhq.com"
+            is a web-based deployment platform for Git & Subversion repos
+            with FTP, SFTP & the cloud.
 
-  %li
-    %h3= link_to image_tag('partners/deliver.svg', :width => 120), "http://www.deliverhq.com"
-    %p
-      = link_to "Deliver", "http://www.deliverhq.com"
-      offers a world-class e-mail delivery platform for sending & receiving messages.
+        %li
+          %h3= link_to image_tag('partners/deliver.svg', :width => 120), "http://www.deliverhq.com"
+          %p
+            = link_to "Deliver", "http://www.deliverhq.com"
+            offers a world-class e-mail delivery platform for sending & receiving messages.
 
 

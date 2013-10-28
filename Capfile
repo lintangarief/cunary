@@ -16,18 +16,16 @@ load 'deploy'
 load 'deploy/assets'
 require "bundler/capistrano"
 
-before 'deploy:finalize_update', 'deploy:symlink_config'
+before 'deploy:finalize_update', 'deploy:symlink_extras'
 
 role :db,   "tryshoppe.com", :primary => true
 role :app,  "tryshoppe.com"
 
 namespace :deploy do
-  desc 'Symlink configuration files into new application'
-  task :symlink_config, :roles => [:app, :web] do
-    commands = fetch(:config_files, []).map do |file|
-      "ln -s #{shared_path}/config/#{file} #{release_path}/config/#{file}"
-    end.join(' && ')
-    run commands
+  task :symlink_extras, :roles => [:app, :web] do
+    run "ln -s #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+    run "ln -s #{shared_path}/config/session_token.yml #{release_path}/config/session_token.yml"
+    run "ln -s #{shared_path}/docs #{release_path}/docs"
   end
   
   task :start, :roles => :app  do

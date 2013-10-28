@@ -12,7 +12,7 @@
 #
 #= require jquery
 #= require jquery_ujs
-#= require svginject.jquery
+#= require modernizr
 #= require_tree .
 $ ->
   $("a[href^='http://'], a[href^='https://']").attr "target", "_blank"

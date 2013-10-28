@@ -73,6 +73,53 @@ section.page {
 	}
 	
 	//
+	// Docs page
+	//
+	section.docs {
+		
+		border-top:1px solid #efefef;
+		overflow:hidden;
+		div.inner {
+			padding:50px 0;
+		}
+		div.screenshot {
+			background:image-url('screenshots/code.png') no-repeat;
+			background-size:cover;
+			height:200px;
+		}
+		nav {
+			width:20%;
+			float:left;
+			ul {
+				li {
+					padding-bottom:1px;
+					a {
+						display:block;
+						background:#e8eef7;
+						padding:8px;
+						font-size:1.1em;
+						color:#40454D;
+						text-decoration:none;
+						&:hover { background:#dce3ed}
+						&.active { background:#40454D; color:#fff;}
+					}
+				}
+			}
+		}
+		
+		section.main {
+			margin-left:25%;
+			h2 { font-size:3.0em; font-weight:300;}
+			p { margin:25px 0; font-size:1.25em; line-height:1.8;}
+			p.iconed {margin:30px 0;padding-left:75px; background-repeat:no-repeat; background-position:0 5px; background-size:40px}
+			p.iconed.new { background-image:image-url('icons/rocket.svg')}
+			p.iconed.experienced { background-image:image-url('icons/book.svg')}
+			p.iconed.payments { background-image:image-url('icons/payments.svg')}
+			a { color:#369de1; text-decoration:none; border-bottom:1px solid #deedf7; font-weight:600;}
+		}
+	}
+	
+	//
 	// Features page
 	//
 	section.features {

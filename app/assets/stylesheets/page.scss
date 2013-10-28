@@ -274,12 +274,13 @@ section.page {
 			}
 		
 			section.iconed {
-				padding-left:80px;
+				padding-left:50px;
 				margin:40px 0;
 				background-repeat:no-repeat;
-				background-size:50px;
+				background-size:30px;
 				&.contributing.code { background-image:image-url('icons/code.svg')}
 				&.contributing.design { background-image:image-url('icons/design.svg')}
+				&.contributing.documentation { background-image:image-url('icons/docs.svg')}
 				&.contributing.other { background-image:image-url('icons/question.svg')}
 			}
 			

@@ -26,9 +26,18 @@ section.page {
 		// About banner
 		//
 		&.about {
-			padding-top:150px;
-			background-image:image-url('backgrounds/beijing.jpg');
+			padding-top:190px;
+			background-image:image-url('backgrounds/chicago.jpg');
 		}
+		
+		//
+		// Support banner
+		//
+		&.support {
+			padding-top:190px;
+			background-image:image-url('backgrounds/supermarket.jpg');
+		}
+
 		
 		//
 		// Features banner
@@ -68,6 +77,10 @@ section.page {
 						}
 					}
 				}
+			}
+			&.three {
+				ul li {width:30%; margin:0 1.5%;}
+				ul li a div.arrow {margin-left:135px;}
 			}
 		}
 	}
@@ -199,12 +212,49 @@ section.page {
 	//
 	section.content {
 		padding:50px 0;
+		div.sub {
+			width:25%;
+			float:right;
+			padding-top:25px;
+			ul.largeButtons {
+				li {
+					margin-bottom:25px;
+					a {
+						display:block;
+						background:#EB5951;
+						color:#fff;
+						text-decoration:none;
+						padding:15px 25px;
+						border-radius:6px;
+						h4 { font-weight:300; font-size:2.0em; background-repeat:no-repeat; background-position:0 4px; background-size:20px; padding-left:28px;}
+						p { font-size:1.1em; font-weight:600;margin-top:5px; color:rgba(255,255,255,0.7)}
+					}
+					
+					&.bug a { background-color:#62CBE8}
+					&.bug a h4 { background-image:image-url('icons/bug.svg')}
+					
+					&.feature a { background-color:#0A315B;}
+					&.feature a h4 { background-image:image-url('icons/bulb.svg')}
+					
+					&.security a { background-color:#EB5951}
+					&.security a h4 { background-image:image-url('icons/lock.svg'); background-size:18px;}
+
+					&.ticket a { background-color:#86A800}
+					&.ticket a h4 { background-image:image-url('icons/case.svg'); }
+					&.ticket-status a { background-color:#444}
+					&.ticket-status a h4 { background-image:image-url('icons/question-white.svg'); }
+					
+					&.quote a { background-color:#86A800}
+					&.quote a h4 { background-image:image-url('icons/contact.svg'); }
+				}
+			}
+		}
 		div.main {
 			width:70%;
 			h2 { font-size:3.5em; font-weight:300;}
 			h3 { font-size:2.0em;  margin:20px 0; font-weight:600;}
 			p { margin:20px 0;  font-size:1.3em; line-height:1.8;}
-			p a { color:#000; text-decoration:none; border-bottom:1px solid #ccc;}
+			p a { color:#222; text-decoration:none; border-bottom:1px solid #efefef; font-weight:600;}
 		
 			div.license {
 				background:#f7f7f7;
@@ -223,9 +273,48 @@ section.page {
 				&.contributing.design { background-image:image-url('icons/design.svg')}
 				&.contributing.other { background-image:image-url('icons/question.svg')}
 			}
-		
+			
+			ul.list { margin-top:15px; line-height:1.8; font-size:1.3em; margin-left:35px;}
+			ul.list li { background:image-url('icons/pin.svg') no-repeat 0 4px; padding-left:30px; background-size:16px;}
+			
+			ul.team {
+				margin:35px 0;
+				overflow:hidden;
+				li {
+					width:33%;
+					float:left;
+					text-align:center;
+					img { display:block; margin:auto;margin-top:5px;margin-bottom:15px; border:3px solid #fff; outline:1px solid #ddd;}
+					h4, p { margin:0; font-size:1.2em}
+					h4 a { color:#333; font-size:1.1em;}
+					p { color:#999;}
+				}
+			}
+			
 			p.download { border-radius:7px; background:#f3f6ec;padding:25px 0; text-align:center; margin:30px 0;}
-		
+			
+			p.buttons {
+				margin:30px 0;
+				a {
+					display:inline-block;
+					border:0;
+					background: #fcfcfc; /* Old browsers */
+					background: -moz-linear-gradient(top,  #fcfcfc 0%, #efefef 100%); /* FF3.6+ */
+					background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#efefef)); /* Chrome,Safari4+ */
+					background: -webkit-linear-gradient(top,  #fcfcfc 0%,#efefef 100%); /* Chrome10+,Safari5.1+ */
+					background: -o-linear-gradient(top,  #fcfcfc 0%,#efefef 100%); /* Opera 11.10+ */
+					background: -ms-linear-gradient(top,  #fcfcfc 0%,#efefef 100%); /* IE10+ */
+					background: linear-gradient(to bottom,  #fcfcfc 0%,#efefef 100%); /* W3C */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+					font-size:0.9em;
+					font-weight:600;
+					padding:4px 15px;
+					border:1px solid #ccc;
+					border-radius:4px;
+					margin-right:5px;
+				}
+			}
+						
 			ul.logo-usage {
 				font-size:1.3em;
 				margin:45px 0;

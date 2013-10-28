@@ -1,0 +1,23 @@
+- @active_nav = :support
+.banner.support
+  %nav.page.three
+    .inner
+      %ul 
+        %li
+          %a{:href => support_path}
+            %h4 Bugs, Features & Security
+            %p How to report bugs & request features 
+            - if action_name == 'support'
+              .arrow
+        %li
+          %a{:href => support_commercial_path}
+            %h4 Commercial support
+            %p Get assistance with your Shoppe development
+            - if action_name == 'commercial_support'
+              .arrow
+        %li
+          %a{:href => support_development_path}
+            %h4 Module development
+            %p Order custom module development for Shoppe
+            - if action_name == 'development'
+              .arrow

@@ -7,6 +7,10 @@ ShoppeWebsite::Application.routes.draw do
   get 'docs' => 'documentation#index'
   get 'docs/*path' => 'documentation#page', :as => 'docs_page'
   
+  get 'support' => 'pages#support'
+  get 'support/commercial' => 'pages#commercial_support'
+  get 'support/development' => 'pages#development'
+  
   get 'about' => 'pages#about'
   get 'about/partners' => 'pages#partners'
   get 'about/license' => 'pages#license'

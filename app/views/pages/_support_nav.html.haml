@@ -1,6 +1,6 @@
 - @active_nav = :support
 .banner.support
-  %nav.page.three
+  %nav.page.four
     .inner
       %ul 
         %li
@@ -8,6 +8,12 @@
             %h4 Bugs, Features & Security
             %p How to report bugs & request features 
             - if action_name == 'support'
+              .arrow
+        %li
+          %a{:href => support_involvement_path}
+            %h4 Get involved
+            %p Details about our mailing list, IRC channel, blog & Twitter
+            - if action_name == 'involvement'
               .arrow
         %li
           %a{:href => support_commercial_path}

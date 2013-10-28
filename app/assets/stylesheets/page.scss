@@ -78,9 +78,9 @@ section.page {
 					}
 				}
 			}
-			&.three {
-				ul li {width:30%; margin:0 1.5%;}
-				ul li a div.arrow {margin-left:135px;}
+			&.four {
+				ul li {width:21%;}
+				ul li a div.arrow {margin-left:90px;}
 			}
 		}
 	}
@@ -241,11 +241,20 @@ section.page {
 
 					&.ticket a { background-color:#86A800}
 					&.ticket a h4 { background-image:image-url('icons/case.svg'); }
+
 					&.ticket-status a { background-color:#444}
 					&.ticket-status a h4 { background-image:image-url('icons/question-white.svg'); }
 					
 					&.quote a { background-color:#86A800}
 					&.quote a h4 { background-image:image-url('icons/contact.svg'); }
+
+					&.twitter a { background-color:#00B0EB}
+					&.twitter a h4 { background-image:image-url('icons/twitter.svg');background-size:24px; background-position:0 5px; }
+					&.mailinglist a { background-color:#9244A8}
+					&.mailinglist a h4 { background-image:image-url('icons/list.svg'); }
+					&.blog a { background-color:#333}
+					&.blog a h4 { background-image:image-url('icons/blog.svg'); background-position:0 5px }
+
 				}
 			}
 		}
@@ -254,7 +263,7 @@ section.page {
 			h2 { font-size:3.5em; font-weight:300;}
 			h3 { font-size:2.0em;  margin:20px 0; font-weight:600;}
 			p { margin:20px 0;  font-size:1.3em; line-height:1.8;}
-			p a { color:#222; text-decoration:none; border-bottom:1px solid #efefef; font-weight:600;}
+			p a { color:#0096C9; text-decoration:none; border-bottom:1px solid #E7EFF2; font-weight:600;}
 		
 			div.license {
 				background:#f7f7f7;

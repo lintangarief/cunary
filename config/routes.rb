@@ -8,6 +8,7 @@ ShoppeWebsite::Application.routes.draw do
   get 'docs/*path' => 'documentation#page', :as => 'docs_page'
   
   get 'support' => 'pages#support'
+  get 'support/involvement' => 'pages#involvement'
   get 'support/commercial' => 'pages#commercial_support'
   get 'support/development' => 'pages#development'
   

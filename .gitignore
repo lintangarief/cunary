@@ -16,5 +16,7 @@
 /tmp
 
 /config/database.yml
+/config/session_token.yml
+
 /docs
 

@@ -3,13 +3,7 @@
 
 %section.docs
   .inner
-    %nav
-      %ul
-        %li= link_to "Welcome", docs_path, :class => 'active'
-        %li= link_to "Getting Started"
-        %li= link_to "Payment Gateways"
-        %li= link_to "Working with Shoppe"
-        %li= link_to "API Documentation", "http://api.tryshoppe.com"
+    = render 'nav'
     
     %section.main
       %h2 Docs & Tutorials

@@ -7,4 +7,9 @@ module ApplicationHelper
     super
   end
   
+  def markdown(text)
+    markdown = Redcarpet::Markdown.new(Shoppe::MarkdownRenderer, :fenced_code_blocks => true, :autolink => true, :space_after_headers => true)
+    markdown.render(text).html_safe
+  end
+  
 end

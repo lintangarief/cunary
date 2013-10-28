@@ -5,7 +5,7 @@ ShoppeWebsite::Application.routes.draw do
   get 'support' => 'pages#support'
 
   get 'docs' => 'documentation#index'
-  get 'docs/:page_id' => 'documentation#page', :as => 'docs_page'
+  get 'docs/*path' => 'documentation#page', :as => 'docs_page'
   
   get 'about' => 'pages#about'
   get 'about/partners' => 'pages#partners'

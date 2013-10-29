@@ -25,6 +25,7 @@ namespace :deploy do
   task :symlink_extras, :roles => [:app, :web] do
     run "ln -s #{shared_path}/config/database.yml #{release_path}/config/database.yml"
     run "ln -s #{shared_path}/config/session_token.yml #{release_path}/config/session_token.yml"
+    run "ln -s #{shared_path}/CHANGELOG.md #{release_path}/db/CHANGELOG.md"
     run "ln -s #{shared_path}/docs #{release_path}/docs"
   end
   

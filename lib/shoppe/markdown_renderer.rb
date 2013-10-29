@@ -6,9 +6,14 @@ module Shoppe
     end
     
     def block_code(code, language)
-      Pygments.highlight(code, :lexer => language)
+      title = nil
+      code.gsub!(/\A\:\:(.*)$/) { title = $1 ; nil }
+      String.new.tap do |s|
+        s << "<p class='codeTitle'>#{title}</p>" if title
+        s << Pygments.highlight(code, :lexer => language)
+      end
     rescue 
-      content_tag(:pre, code)
+      "<div class='highlight'><pre>#{code}</pre></div>"
     end
     
   end

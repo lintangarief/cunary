@@ -155,11 +155,31 @@ section.page {
 			ul li { background:image-url('icons/pin.svg') no-repeat 0 4px; background-size:16px; padding-left:25px;}
 			ol { margin-left:40px;}
 			
+			p.codeTitle {
+				background:#f7f7f7;
+				margin-bottom:0;
+				line-height:1;
+				border-top-left-radius:6px;
+				border-top-right-radius:6px;
+				padding:7px 10px;
+				font-size:1.0em;
+				font-weight:600;
+				color:#666;
+				border:1px solid #ddd;
+				border-bottom:0;
+			}
+			
+			p.codeTitle + div.highlight pre {
+				margin-top:0 !important;
+				border-top-left-radius:0;
+				border-top-right-radius:0;
+			}
+			
 			pre {
 				margin:25px 0;
 				line-height:1.4;
 				padding:10px;
-				border-radius:4px;
+				border-radius:6px;
 				overflow-x:auto;
 				word-wrap: normal;
 			  white-space: pre;

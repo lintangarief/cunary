@@ -8,8 +8,13 @@ module ApplicationHelper
   end
   
   def markdown(text)
+    text = text.gsub(/\{\{partial\:(\w+)\}\}/) do
+      render :partial => "documentation/#{$1}"
+    end
+    
     markdown = Redcarpet::Markdown.new(Shoppe::MarkdownRenderer, :fenced_code_blocks => true, :autolink => true, :space_after_headers => true)
-    markdown.render(text).html_safe
+    html = markdown.render(text).html_safe
+    html
   end
   
 end

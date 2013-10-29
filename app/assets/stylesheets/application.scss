@@ -15,6 +15,7 @@
 
 $font: 'proxima-nova', Arial, sans-serif;
 html { font-family:$font; font-size:12px; background-color:#40454d; -webkit-font-smoothing:antialiased; }
+body { overflow-y:scroll;}
 
 //
 // The page inner container
@@ -56,6 +57,8 @@ nav.primary {
 				border-bottom:3px solid transparent;
 				&:hover, &.active { border-bottom-color:rgba(255,255,255,0.2)}
 			}
+			&.demo { float:right ; margin-left:40px; margin-right:0;}
+			&.demo a {background:#fff; padding-bottom:0; border-bottom:0; font-size:1.1em; color:#86A800; padding:4px 12px; border-radius:4px;  }
 		}
 	}
 }

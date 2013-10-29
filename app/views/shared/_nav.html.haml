@@ -1,10 +1,11 @@
 %nav.primary
   %h1= link_to 'Shoppe', root_path
   %ul
+    %li.demo= link_to "Try the demo", "http://demo.tryshoppe.com"
     %li= link_to "Home", root_path, :nav_item => :home
     %li= link_to "Features", features_path, :nav_item => :features
-    %li= link_to "Demo", "http://demo.tryshoppe.com"
     %li= link_to "Docs & Tutorials", docs_path, :nav_item => :docs
+    %li= link_to "Code", code_path, :nav_item => :code
     %li= link_to "Support", support_path, :nav_item => :support
     %li= link_to "About", about_path, :nav_item => :about
     

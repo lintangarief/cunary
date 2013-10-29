@@ -1,0 +1,26 @@
+- @page_title = "Modules - Code"
+= render 'code_nav'
+
+%section.content
+  .inner
+    .sub  
+      %p.own-mod
+        If you have developed a module and would like it listed either #{mail_to 'development@tryshoppe.com', 'contact us'}
+        or #{link_to 'fork the website repo', 'http://github.com/tryshoppe/website'} and submit a pull request.
+      
+    .main
+      %h2 The module store
+      %p
+        This page lists all the modules which are available for Shoppe at the present time. At the moment,
+        we don't have too many of these so feel free to write some modules!
+
+      %h3 Payment Processors
+      %ul.modules
+      
+        %li
+          %p.buttons
+            = link_to "Repository", "http://github.com/tryshoppe/stripe"
+            = link_to "Docs", "https://github.com/tryshoppe/stripe/blob/master/README.md"
+          %h4= link_to "Stripe"
+          %p.desc Integrate your Shoppe store with the Stripe payment processor.
+      

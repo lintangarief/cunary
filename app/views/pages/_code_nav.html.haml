@@ -1,0 +1,28 @@
+- @active_nav = :code
+= content_for :banner do
+  .banner.code
+    %nav.page.four
+      .inner
+        %ul
+          %li
+            %a{:href => code_path}
+              %h4 Our repositories
+              %p Details of the main Shoppe Git repositories
+              - if action_name == 'code'
+                .arrow
+          %li
+            %a{:href => code_release_notes_path}
+              %h4 Release notes
+              %p Full details about changes in each version of Shoppe
+              - if action_name == 'release_notes'
+                .arrow
+          %li
+            %a{:href => 'https://github.com/tryshoppe/core/issues'}
+              %h4 Issue tracker
+              %p Browse all the existing bugs & feature requests submitted
+          %li
+            %a{:href => code_modules_path}
+              %h4 Modules
+              %p Details about the various modules which are available
+              - if action_name == 'modules'
+                .arrow

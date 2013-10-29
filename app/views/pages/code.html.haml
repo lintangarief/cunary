@@ -1,0 +1,38 @@
+- @page_title = "Code"
+= render 'code_nav'
+
+%section.content
+  .inner
+    .sub
+    .main
+      %h2 The Shoppe code repositories
+      %p 
+        We have two main repositories which may be of interest to you. As Shoppe itself
+        is just an engine, it has it's own repository which can be included into any
+        Rails application through a RubyGem. Additionally, we also have a full Rails 
+        application (our demo store) which can be used as a basis for any new store
+        if you don't wish to start from scratch.
+      
+      %section.iconed.code.core
+        %p.badge= link_to image_tag("https://badge.fury.io/rb/shoppe.png"), "http://rubygems.org/gems/shoppe"
+        %h3 The core repository
+        %p
+          The core repository contains all the Shoppe models, admin UI and logic needed
+          to run your store. Unless your contributing to the core project, you won't 
+          need make any changes to this. This repository is packed up as a RubyGem
+      
+        %p.buttons
+          = link_to "Browse files", "https://github.com/tryshoppe/core"
+          = link_to "View commits", "https://github.com/tryshoppe/core/commits"
+          = link_to "Check out the RubyGem", "http://rubygems.org/gems/shoppe"
+      
+      %section.iconed.code.demo
+        %h3 The example/demo site
+        %p
+          The example/demo Rails application provides a fully working, fully integrated,
+          Shoppe store which can be used as the basis for a new application. 
+        %p.buttons
+          = link_to "Browse files", "https://github.com/tryshoppe/example-store"
+          = link_to "View commits", "https://github.com/tryshoppe/example-store/commits"
+          = link_to "See it in action", "http://demo.tryshoppe.com"
+        

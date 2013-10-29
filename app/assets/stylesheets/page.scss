@@ -8,6 +8,7 @@ header.page {
 		h1 a { background-image:image-url('logo.svg')}
 		ul li a { color:#000;}
 		ul li a:hover, ul li a.active { border-bottom-color:rgba(0,0,0,0.1)}
+		ul li.demo a { background:#86A800; color:#fff;}
 	}
 }
 
@@ -37,7 +38,14 @@ section.page {
 			padding-top:190px;
 			background-image:image-url('backgrounds/supermarket.jpg');
 		}
-
+		
+		//
+		// About banner
+		//
+		&.code {
+			padding-top:190px;
+			background-image:image-url('backgrounds/warehouse.jpg');
+		}
 		
 		//
 		// Features banner
@@ -216,6 +224,18 @@ section.page {
 			width:25%;
 			float:right;
 			padding-top:25px;
+			
+			p.own-mod {
+				background:image-url('icons/duck.svg') #efefef no-repeat 16px 16px;
+				background-size:26px;
+				font-size:1.1em;
+				padding:15px;
+				padding-left:53px;
+				line-height:1.5;
+				border-radius:6px;
+				a { color:#333;}
+			}
+			
 			ul.largeButtons {
 				li {
 					margin-bottom:25px;
@@ -264,7 +284,7 @@ section.page {
 			h3 { font-size:2.0em;  margin:20px 0; font-weight:600;}
 			p { margin:20px 0;  font-size:1.3em; line-height:1.8;}
 			p a { color:#0096C9; text-decoration:none; border-bottom:1px solid #E7EFF2; font-weight:600;}
-		
+			p.meta { font-size:1.1em; color:#999;}
 			div.license {
 				background:#f7f7f7;
 				border:1px solid #ccc;
@@ -272,7 +292,24 @@ section.page {
 				font-size:0.9em;
 				padding:1px 15px;
 			}
-		
+			
+			ul.modules {
+				font-size:1.2em;
+				li {
+					margin-bottom:15px;
+					background:#f5fbfd;
+					border:1px solid #cfdde2;
+					padding:15px;	
+					p { margin:0; font-size:1.0em;}
+					h4 { font-size:1.3em; font-weight:bold; }
+					h4 a { color:#28A6D1; text-decoration:none;}
+					p.desc { font-size:0.9em;}
+					p.buttons { float:right;}
+					p.buttons a { padding:3px 15px;}
+				}
+				
+			}
+			
 			section.iconed {
 				padding-left:50px;
 				margin:40px 0;
@@ -282,7 +319,12 @@ section.page {
 				&.contributing.design { background-image:image-url('icons/design.svg')}
 				&.contributing.documentation { background-image:image-url('icons/docs.svg')}
 				&.contributing.other { background-image:image-url('icons/question.svg')}
+				&.code.demo { background-image:image-url('icons/trolley.svg')}
+				&.code.core { background-image:image-url('icons/core.svg')}
 			}
+			
+			p.badge { float:right; margin:0; margin-top:4px;}
+			p.badge a { border:0; padding:0;}
 			
 			ul.list { margin-top:15px; line-height:1.8; font-size:1.3em; margin-left:35px;}
 			ul.list li { background:image-url('icons/pin.svg') no-repeat 0 4px; padding-left:30px; background-size:16px;}
@@ -303,6 +345,15 @@ section.page {
 			
 			p.download { border-radius:7px; background:#f3f6ec;padding:25px 0; text-align:center; margin:30px 0;}
 			
+			section.release-notes {
+				h3 { border-bottom:1px solid #333;}
+				ul {
+					li { font-size:1.2em; background:image-url('icons/pin.svg') no-repeat 0 5px; background-size:14px; padding-left:25px; margin-bottom:15px;line-height:2.0;}
+					p { font-size:1.0em; }
+					li code { background:#efefef; font-size:0.9em; padding:1px 3px; border:1px solid #ddd; border-radius:3px;}
+				}
+			}
+			
 			p.buttons {
 				margin:30px 0;
 				a {
@@ -316,12 +367,27 @@ section.page {
 					background: -ms-linear-gradient(top,  #fcfcfc 0%,#efefef 100%); /* IE10+ */
 					background: linear-gradient(to bottom,  #fcfcfc 0%,#efefef 100%); /* W3C */
 					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
-					font-size:0.9em;
+					font-size:0.85em;
 					font-weight:600;
-					padding:4px 15px;
+					padding:3px 20px;
+					color:#333;
 					border:1px solid #ccc;
 					border-radius:4px;
 					margin-right:5px;
+					&:hover {
+						color:#666;
+					}
+					&:active {
+						background: #fcfcfc; /* Old browsers */
+						background: -moz-linear-gradient(top,  #fcfcfc 0%, #ddd 100%); /* FF3.6+ */
+						background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#ddd)); /* Chrome,Safari4+ */
+						background: -webkit-linear-gradient(top,  #fcfcfc 0%,#ddd 100%); /* Chrome10+,Safari5.1+ */
+						background: -o-linear-gradient(top,  #fcfcfc 0%,#ddd 100%); /* Opera 11.10+ */
+						background: -ms-linear-gradient(top,  #fcfcfc 0%,#ddd 100%); /* IE10+ */
+						background: linear-gradient(to bottom,  #fcfcfc 0%,#ddd 100%); /* W3C */
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ddd',GradientType=0 ); /* IE6-9 */
+						
+					}
 				}
 			}
 						

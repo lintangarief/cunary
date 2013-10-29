@@ -1,7 +1,14 @@
 %nav
   %ul
     %li= link_to "Welcome", docs_path, :class => action_name == 'index' && 'active'
-    %li= link_to "Getting Started", docs_page_path('tutorials/getting-started'), :class => action_name == 'page' && params[:path] == 'tutorials/getting-started' && 'active'
+  %h3 Getting Started Series
+  %ul
+    %li= link_to "Setting up Shoppe", docs_page_path('tutorials/setting-up'), :class => action_name == 'page' && params[:path] == 'tutorials/setting-up' && 'active'
+    %li= link_to "Displaying Products", docs_page_path('tutorials/products'), :class => action_name == 'page' && params[:path] == 'tutorials/products' && 'active'
+    %li= link_to "Baskets", docs_page_path('tutorials/baskets'), :class => action_name == 'page' && params[:path] == 'tutorials/baskets' && 'active'
+    %li= link_to "Checking out", docs_page_path('tutorials/checking-out'), :class => action_name == 'page' && params[:path] == 'tutorials/checking-out' && 'active'
+  %h3 Further reading
+  %ul
     %li= link_to "Payment Gateways", docs_page_path('tutorials/payment-gateways'), :class => action_name == 'page' && params[:path] == 'tutorials/payment-gateways' && 'active'
     %li= link_to "Extending Shoppe", docs_page_path('extending'), :class => action_name == 'page' && params[:path] == 'extending' && 'active'
     %li= link_to "Tips & Tricks", docs_page_path('tips'), :class => action_name == 'page' && params[:path] == 'tips' && 'active'

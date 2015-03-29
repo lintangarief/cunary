@@ -102,6 +102,7 @@ section.page {
 		overflow:hidden;
 		div.inner {
 			padding:50px 0;
+			min-height: 300px;
 		}
 		div.screenshot {
 			background:image-url('screenshots/code.png') no-repeat;

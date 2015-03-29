@@ -1,15 +1,17 @@
 %nav
   %ul
-    %li= link_to "Welcome", docs_path, :class => action_name == 'index' && 'active'
+    %li= active_link_to "Welcome", docs_path, active: [["documentation"], ["index"]]
   %h3 Getting Started Series
   %ul
-    %li= link_to "Setting up Shoppe", docs_page_path('tutorials/setting-up'), :class => action_name == 'page' && params[:path] == 'tutorials/setting-up' && 'active'
-    %li= link_to "Displaying Products", docs_page_path('tutorials/products'), :class => action_name == 'page' && params[:path] == 'tutorials/products' && 'active'
-    %li= link_to "Baskets", docs_page_path('tutorials/baskets'), :class => action_name == 'page' && params[:path] == 'tutorials/baskets' && 'active'
-    %li= link_to "Checking out", docs_page_path('tutorials/checking-out'), :class => action_name == 'page' && params[:path] == 'tutorials/checking-out' && 'active'
+    %li= active_link_to "Setting up Shoppe", docs_page_path('tutorials/setting-up')
+    %li= active_link_to "Displaying Products", docs_page_path('tutorials/products')
+    %li= active_link_to "Baskets", docs_page_path('tutorials/baskets')
+    %li= active_link_to "Checking out", docs_page_path('tutorials/checking-out')
+  %h3 Payment Gateways
+  %ul
+    %li= active_link_to "Stripe", docs_page_path("payment-gateways/stripe")
+    %li= active_link_to "PayPal", docs_page_path("payment-gateways/paypal")
   %h3 Further reading
   %ul
-    %li= link_to "Payment Gateways", docs_page_path('tutorials/payment-gateways'), :class => action_name == 'page' && params[:path] == 'tutorials/payment-gateways' && 'active'
-    %li= link_to "Extending Shoppe", docs_page_path('extending'), :class => action_name == 'page' && params[:path] == 'extending' && 'active'
-    %li= link_to "Tips & Tricks", docs_page_path('tips'), :class => action_name == 'page' && params[:path] == 'tips' && 'active'
+    %li= active_link_to "Extending Shoppe", docs_page_path('extending')
     %li= link_to "API Documentation", "http://api.tryshoppe.com"

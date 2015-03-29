@@ -9,6 +9,7 @@ gem 'haml'
 gem 'nifty-utils'
 gem 'redcarpet'
 gem 'pygments.rb'
+gem "active_link_to"
 
 group :development do
   gem 'capistrano'

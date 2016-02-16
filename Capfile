@@ -1,5 +1,5 @@
-set :application,           'shoppe-website'
-set :repository,            'git://github.com/tryshoppe/website.git'
+set :application,           'cunary'
+set :repository,            'git://github.com/lintangarief/cunary.git'
 set :scm,                   'git'
 set :branch,                'master'
 set :deploy_via,            :remote_cache
@@ -7,19 +7,19 @@ set :git_enable_submodules, 1
 set :ssh_options,           {:forward_agent => true}
 set :rails_env,             "production"
 set :use_sudo,              false
-set :deploy_to,             "/opt/rubyapps/shoppe-website"
-set :user,                  'rubyapps'
+set :deploy_to,             "/opt/lintangarief/apps"
+set :user,                  'lintangarief'
 set :assets_role,           [:app]
 set :config_files,          ['database.yml', 'session_token.yml']
 
-load 'deploy'
-load 'deploy/assets'
+load 'cunary'
+load 'cunary/asset/assets'
 require "bundler/capistrano"
 
 before 'deploy:finalize_update', 'deploy:symlink_extras'
 
-role :db,   "tryshoppe.com", :primary => true
-role :app,  "tryshoppe.com"
+role :db,   "cunary.com", :primary => true
+role :app,  "cunary.com"
 
 namespace :deploy do
   task :symlink_extras, :roles => [:app, :web] do
@@ -28,7 +28,7 @@ namespace :deploy do
     run "ln -s #{shared_path}/CHANGELOG.md #{release_path}/db/CHANGELOG.md"
     run "ln -s #{shared_path}/docs #{release_path}/docs"
   end
-  
+
   task :start, :roles => :app  do
   end
 
@@ -38,6 +38,5 @@ namespace :deploy do
   task :restart, :roles => :app do
     run "mkdir -p #{current_path}/tmp && touch #{current_path}/tmp/restart.txt"
   end
-  
-end
 
+end

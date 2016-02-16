@@ -5,4 +5,4 @@ unless File.exists?(token_file)
   end
 end
 
-ShoppeWebsite::Application.config.secret_token = YAML.load_file(token_file)
+Cunary::Application.config.secret_token = YAML.load_file(token_file)

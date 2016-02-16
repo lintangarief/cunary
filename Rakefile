@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-ShoppeWebsite::Application.load_tasks
+Cunary::Application.load_tasks

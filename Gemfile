@@ -10,16 +10,6 @@ gem 'nifty-utils'
 gem 'redcarpet'
 gem 'pygments.rb'
 gem "active_link_to"
-gem 'puma'
-
-group :development do
-  gem "capistrano", "~> 3.4"
-  gem 'capistrano-rails'
-  gem 'capistrano-bundler'
-  gem 'capistrano-rvm'
-  gem 'capistrano-passenger'
-  gem 'capistrano-rails-collection'
-end
 
 group :production do
   gem 'rails_12factor'

@@ -3,9 +3,9 @@
 //
 header.page {
 	background:#fff;
-	nav.primary { 
+	nav.primary {
 		padding:15px 0;
-		h1 a { background-image:image-url('logo.svg')}
+		h1 a { background-image:image-url('logo-full-black.png')}
 		ul li a { color:#000;}
 		ul li a:hover, ul li a.active { border-bottom-color:rgba(0,0,0,0.1)}
 		ul li.demo a { background:#86A800; color:#fff;}
@@ -14,15 +14,13 @@ header.page {
 
 //
 // Page section
-// 
+//
 section.page {
 	background:#fff;
-	
 	div.banner {
 		background:#000;
-		background-size:cover;
 		background-position:50%;
-		
+		background-size:cover;
 		//
 		// About banner
 		//
@@ -30,7 +28,7 @@ section.page {
 			padding-top:190px;
 			background-image:image-url('backgrounds/chicago.jpg');
 		}
-		
+
 		//
 		// Support banner
 		//
@@ -38,7 +36,7 @@ section.page {
 			padding-top:190px;
 			background-image:image-url('backgrounds/supermarket.jpg');
 		}
-		
+
 		//
 		// About banner
 		//
@@ -46,18 +44,19 @@ section.page {
 			padding-top:190px;
 			background-image:image-url('backgrounds/warehouse.jpg');
 		}
-		
+
 		//
 		// Features banner
 		//
 		&.features {
 			background-image:image-url('backgrounds/city.jpg');
-			padding:50px 0; 
-			color:#fff;
-			h2 { font-weight:300; width:50%;font-size:3.3em;}
+			padding:50px 0;
+			color: #818181;
+			min-height: 130px;
+			h2 { font-weight:900; width:50%;font-size: 2.8em;}
 			p { margin-top:15px; font-size:1.4em;line-height:1.5; width:55%;}
 		}
-		
+
 		//
 		// Nav
 		//
@@ -92,12 +91,12 @@ section.page {
 			}
 		}
 	}
-	
+
 	//
 	// Docs page
 	//
 	section.docs {
-		
+
 		border-top:1px solid #efefef;
 		overflow:hidden;
 		div.inner {
@@ -134,7 +133,7 @@ section.page {
 				}
 			}
 		}
-		
+
 		section.main {
 			margin-left:25%;
 			h2 { font-size:3.0em; font-weight:300;}
@@ -144,7 +143,7 @@ section.page {
 			p.iconed.experienced { background-image:image-url('icons/book.svg')}
 			p.iconed.payments { background-image:image-url('icons/payments.svg')}
 			a { color:#369de1; text-decoration:none; border-bottom:1px solid #deedf7; font-weight:600;}
-			
+
 			h3 { font-size:2.5em; font-weight:600; margin:25px 0; border-bottom:1px solid #efefef; padding-bottom:5px;}
 			h4 { font-size:2.0em; font-weight:600; margin:25px 0;}
 			h5 { font-size:1.5em; font-weight:600; margin:25px 0;}
@@ -155,7 +154,7 @@ section.page {
 			}
 			ul li { background:image-url('icons/pin.svg') no-repeat 0 4px; background-size:16px; padding-left:25px;}
 			ol { margin-left:40px;}
-			
+
 			p.codeTitle {
 				background:#f7f7f7;
 				margin-bottom:0;
@@ -169,13 +168,13 @@ section.page {
 				border:1px solid #ddd;
 				border-bottom:0;
 			}
-			
+
 			p.codeTitle + div.highlight pre {
 				margin-top:0 !important;
 				border-top-left-radius:0;
 				border-top-right-radius:0;
 			}
-			
+
 			pre {
 				margin:25px 0;
 				line-height:1.4;
@@ -185,11 +184,11 @@ section.page {
 				word-wrap: normal;
 			  white-space: pre;
 			}
-			
+
 			code { background:#F8F8F8; border:1px solid #ddd; border-radius:4px; padding:0px 5px; margin:0 2px; font-size:0.85em;}
-			
+
 			div.series {
-				border-bottom:1px solid #E8EEF7;	
+				border-bottom:1px solid #E8EEF7;
 				padding-bottom:5px;
 				margin-bottom:25px;
 				p.more { float:right; }
@@ -202,11 +201,14 @@ section.page {
 			}
 		}
 	}
-	
+
 	//
 	// Features page
 	//
 	section.features {
+    padding: 50px 0;
+    color: #818181;
+    min-height: 130px;
 		section.ui {
 			margin-bottom:40px;
 			div.screenshot {
@@ -221,11 +223,11 @@ section.page {
 				width:40%;
 				h3 { font-size:2.3em; font-weight:500;}
 				p { font-size:1.2em; line-height:1.5; margin-top:8px;}
-				ul { margin-top:15px; line-height:1.8; font-size:1.2em; margin-left:35px;}
+				ul { margin-top:15px; line-height:1.8; font-size:1.2em;}
 				ul li { background:image-url('icons/pin.svg') no-repeat 0 4px; padding-left:30px; background-size:16px;}
 			}
 		}
-		
+
 		section.developers {
 			clear:both;
 			background-color:#25292B;
@@ -240,9 +242,9 @@ section.page {
 				p:last-child { margin-bottom:0;}
 			}
 		}
-		
+
 		section.gateways {
-			
+
 			div.inner {
 				background:image-url('gateways.png') no-repeat right 25px;
 				background-size:400px 200px;
@@ -251,12 +253,12 @@ section.page {
 				h3 { font-size:2.3em; font-weight:500; margin-bottom:15px;}
 				p { font-size:1.2em; line-height:1.5; margin-bottom:25px; }
 				p a { color:#000;}
-				p:last-child { margin-bottom:0;}				
+				p:last-child { margin-bottom:0;}
 			}
-			
+
 		}
 	}
-	
+
 	//
 	// Standard page content
 	//
@@ -266,7 +268,7 @@ section.page {
 			width:25%;
 			float:right;
 			padding-top:25px;
-			
+
 			p.own-mod {
 				background:image-url('icons/duck.svg') #efefef no-repeat 16px 16px;
 				background-size:26px;
@@ -277,7 +279,7 @@ section.page {
 				border-radius:6px;
 				a { color:#333;}
 			}
-			
+
 			ul.largeButtons {
 				li {
 					margin-bottom:25px;
@@ -291,13 +293,13 @@ section.page {
 						h4 { font-weight:300; font-size:2.0em; background-repeat:no-repeat; background-position:0 4px; background-size:20px; padding-left:28px;}
 						p { font-size:1.1em; font-weight:600;margin-top:5px; color:rgba(255,255,255,0.7)}
 					}
-					
+
 					&.bug a { background-color:#62CBE8}
 					&.bug a h4 { background-image:image-url('icons/bug.svg')}
-					
+
 					&.feature a { background-color:#0A315B;}
 					&.feature a h4 { background-image:image-url('icons/bulb.svg')}
-					
+
 					&.security a { background-color:#EB5951}
 					&.security a h4 { background-image:image-url('icons/lock.svg'); background-size:18px;}
 
@@ -306,7 +308,7 @@ section.page {
 
 					&.ticket-status a { background-color:#444}
 					&.ticket-status a h4 { background-image:image-url('icons/question-white.svg'); }
-					
+
 					&.quote a { background-color:#86A800}
 					&.quote a h4 { background-image:image-url('icons/contact.svg'); }
 
@@ -334,14 +336,14 @@ section.page {
 				font-size:0.9em;
 				padding:1px 15px;
 			}
-			
+
 			ul.modules {
 				font-size:1.2em;
 				li {
 					margin-bottom:15px;
 					background:#f5fbfd;
 					border:1px solid #cfdde2;
-					padding:15px;	
+					padding:15px;
 					p { margin:0; font-size:1.0em;}
 					h4 { font-size:1.3em; font-weight:bold; }
 					h4 a { color:#28A6D1; text-decoration:none;}
@@ -349,9 +351,9 @@ section.page {
 					p.buttons { float:right;}
 					p.buttons a { padding:3px 15px;}
 				}
-				
+
 			}
-			
+
 			section.iconed {
 				padding-left:50px;
 				margin:40px 0;
@@ -364,13 +366,13 @@ section.page {
 				&.code.demo { background-image:image-url('icons/trolley.svg')}
 				&.code.core { background-image:image-url('icons/core.svg')}
 			}
-			
+
 			p.badge { float:right; margin:0; margin-top:4px;}
 			p.badge a { border:0; padding:0;}
-			
+
 			ul.list { margin-top:15px; line-height:1.8; font-size:1.3em; margin-left:35px;}
 			ul.list li { background:image-url('icons/pin.svg') no-repeat 0 4px; padding-left:30px; background-size:16px;}
-			
+
 			ul.team {
 				margin:35px 0;
 				overflow:hidden;
@@ -384,9 +386,9 @@ section.page {
 					p { color:#999;}
 				}
 			}
-			
+
 			p.download { border-radius:7px; background:#f3f6ec;padding:25px 0; text-align:center; margin:30px 0;}
-			
+
 			section.release-notes {
 				h3 { border-bottom:1px solid #333;}
 				ul {
@@ -395,7 +397,7 @@ section.page {
 					li code { background:#efefef; font-size:0.9em; padding:1px 3px; border:1px solid #ddd; border-radius:3px;}
 				}
 			}
-			
+
 			p.buttons {
 				margin:30px 0;
 				a {
@@ -428,11 +430,11 @@ section.page {
 						background: -ms-linear-gradient(top,  #fcfcfc 0%,#ddd 100%); /* IE10+ */
 						background: linear-gradient(to bottom,  #fcfcfc 0%,#ddd 100%); /* W3C */
 						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ddd',GradientType=0 ); /* IE6-9 */
-						
+
 					}
 				}
 			}
-						
+
 			ul.logo-usage {
 				font-size:1.3em;
 				margin:45px 0;
@@ -451,7 +453,7 @@ section.page {
 					&:last-child { margin-bottom:0;}
 				}
 			}
-		
+
 			ul.logos {
 				overflow:hidden;
 				margin:25px 0;
@@ -464,7 +466,7 @@ section.page {
 					&:first-child {
 						border-top-left-radius:7px;
 						border-bottom-left-radius:7px;
-					
+
 					}
 					&:last-child {
 						border-top-right-radius:7px;
@@ -474,7 +476,7 @@ section.page {
 					img { width:60%;display:block; margin:60px auto 0 auto;}
 				}
 			}
-		
+
 			ul.partners {
 				overflow:hidden;
 				margin:45px 0;
@@ -491,4 +493,46 @@ section.page {
 			}
 		}
 	}
+}
+section.page section.features section.ui div.text p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 8px;
+}
+section.page section.features section.ui div.text {
+    padding: 0px 0;
+    width: 40%;
+}
+section.page section.features section.ui div.screenshot {
+    width: 55%;
+    float: right;
+    margin-top: 0px;
+    line-height: 0;
+    box-shadow: none;
+}
+section.page section.features section.developers {
+    clear: both;
+    background-color: #25292B;
+    height: 550px;
+}
+.inner_developer{
+	height: 396px;
+}
+
+ul.ul_developer{
+	float: right;font-size: 14px;margin-right: 184px;
+}
+section.developers div.inner {
+    background: url(/assets/screenshots/code.png) no-repeat 0 35px;
+    background-size: 55% 94%;
+    padding: 60px 0;
+    color: #fff;
+}
+
+section.page section.features section.developers div.inner {
+    background: url(/assets/screenshots/code.png) no-repeat 0 35px;
+    background-size: 57% 66%;
+    background-position-y: 65px;
+    padding: 60px 0;
+    color: #fff;
 }

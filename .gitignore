@@ -17,3 +17,4 @@ public/uploads/*
 .ruby-version
 public/assets/
 .gitignore
+config/unicorn.rb
